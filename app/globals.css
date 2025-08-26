@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #fdfcf9;
+    color: #1e1b4b;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Satoshi', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-black-950 text-white px-8 py-4 rounded-lg font-semibold hover:bg-black-900 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-black-950 text-black-950 px-8 py-4 rounded-lg font-semibold hover:bg-black-950 hover:text-white transition-all duration-300;
+  }
+  
+  .btn-orange {
+    @apply bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-green {
+    @apply bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  /* CTA Button Styles */
+  .btn { 
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold; 
+  }
+  
+  /* CTA-specific primary button - overrides general btn-primary for CTAs */
+  .cta.btn-primary,
+  .cta--nav.btn-primary,
+  .cta--hero.btn-primary { 
+    @apply bg-orange-500 text-white hover:bg-orange-600 !important; 
+  }
+
+  .cta { 
+    @apply transition duration-200 ease-in-out will-change-transform; 
+  }
+
+  /* Hero CTA: visible by default */
+  .cta--hero { 
+    @apply opacity-100 translate-y-0 scale-100; 
+  }
+  
+  .cta--hero.is-hidden { 
+    @apply opacity-0 translate-y-2 scale-95 pointer-events-none; 
+  }
+
+  /* Nav CTA: hidden by default */
+  .cta--nav { 
+    @apply opacity-0 -translate-y-2 scale-95 pointer-events-none; 
+  }
+  
+  .cta--nav.is-visible { 
+    @apply opacity-100 translate-y-0 scale-100 pointer-events-auto shadow-md; 
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-black-950 to-orange-500 bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* Hero iframe flush fixes */
+  .hero iframe {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    outline: none !important;
+    vertical-align: top;
+    line-height: 0;
+    display: block;
+  }
+  
+  /* Hardware acceleration for header */
+  header {
+    transform: translateZ(0);
+  }
+} 
+
+/* Custom animations for About Us page */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .cta { 
+    transition: none !important; 
+  }
+} 
