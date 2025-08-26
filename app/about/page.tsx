@@ -95,7 +95,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-br from-black-950 to-black-800 p-8 rounded-3xl text-white shadow-2xl">
                 <div className="flex items-center mb-6">
                   <Award className="w-8 h-8 mr-3" />
-                  <h3 className="text-2xl font-bold">Backed by Lloyd's</h3>
+                  <h3 className="text-2xl font-bold">Backed by Global Insurers</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center">

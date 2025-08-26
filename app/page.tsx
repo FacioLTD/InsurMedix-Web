@@ -199,9 +199,18 @@ export default function Home() {
             >
               <h3 className="text-2xl font-bold mb-6">Our Mission</h3>
               <ul className="space-y-4">
-                <li>Empower movement and growth</li>
-                <li>Provide comprehensive protection</li>
-                <li>Build supportive communities</li>
+                <li className="flex items-center">
+                  <span className="text-green-400 mr-3">✓</span>
+                  Empower movement and growth
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-400 mr-3">✓</span>
+                  Provide comprehensive protection
+                </li>
+                <li className="flex items-center">
+                  <span className="text-green-400 mr-3">✓</span>
+                  Build supportive communities
+                </li>
               </ul>
             </motion.div>
           </div>

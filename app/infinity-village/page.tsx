@@ -320,7 +320,7 @@ export default function InfinityVillage() {
               {
                 icon: Globe,
                 title: "Global Insurance",
-                description: "Travel and medical coverage through Air Doctor, with support in 200+ countries for peace of mind.",
+                description: "Travel and medical coverage through VIP Concierge Services, with support in 200+ countries for peace of mind.",
                 color: "text-blue-900",
                 bgColor: "bg-blue-50"
               }
