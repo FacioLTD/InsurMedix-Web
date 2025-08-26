@@ -515,9 +515,9 @@ export default function Home() {
               Ready to Empower Your Movement?
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
+              <Link href="/partner" className="bg-orange-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-orange-600 transition-colors">
                 Let's Talk
-              </button>
+              </Link>
             </div>
           </motion.div>
         </div>
