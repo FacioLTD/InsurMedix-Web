@@ -64,7 +64,7 @@ export default function Home() {
           {/* Desktop Video Background */}
           <div className="absolute inset-0 w-full h-full hidden md:block">
             <iframe
-              src="https://www.youtube.com/embed/TIh0JNR7SsA?autoplay=1&mute=1&loop=1&playlist=TIh0JNR7SsA&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+              src="https://www.youtube.com/embed/j4XBJx6USPs?autoplay=1&mute=1&loop=1&playlist=j4XBJx6USPs&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
               title="Background Video"
               className="w-full h-full object-cover"
               style={{ 
@@ -82,7 +82,7 @@ export default function Home() {
           {/* Mobile Video Background */}
           <div className="absolute inset-0 w-full h-full md:hidden overflow-hidden">
             <iframe
-              src="https://www.youtube.com/embed/llmgPziamm0?autoplay=1&mute=1&loop=1&playlist=llmgPziamm0&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&vq=hd1080"
+              src="https://www.youtube.com/embed/OyexqFWqFLI?autoplay=1&mute=1&loop=1&playlist=OyexqFWqFLI&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&vq=hd1080"
               title="Mobile Background Video"
               className="absolute top-1/2 left-1/2 w-[120%] h-[120%] -translate-x-1/2 -translate-y-1/2 object-cover"
               style={{ 
